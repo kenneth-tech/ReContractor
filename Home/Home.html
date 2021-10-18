@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-2.1.4.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Style/Style.css" />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="loader.css" />
+
+    <script src="loader.js"></script>
+
+    <title>ReContractor</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" name="" id="check" />
+
+      <img src="/Style/photo/logo2.png" alt="" srcset="" />
+
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul></ul>
+        </div>
+
+        <div class="log-sign" style="--i: 1.8s">
+          <a href="" class="btn transparent">Log in</a>
+          <a href="" class="btn transparent">About Us</a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="Home">
+      <div class="home-picture">
+        <img src="/Home/undraw_under_construction_46pa.svg" alt="" srcset="" />
+      </div>
+      <div class="saying">
+        <h1>Recontractor</h1>
+        <h4>Helping you Find The Best Contractor!</h4>
+        <input
+          onclick="document.getElementById('id01').style.display='block'"
+          type="button"
+          value="Lets Find"
+        />
+      </div>
+    </div>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom" style="border-radius: 10px">
+        <header
+          class="w3-container"
+          style="border-top-left-radius: 10px; border-top-right-radius: 10px"
+        >
+          <span
+            style="color: white; border-top-right-radius: 10px"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2 style="font-family: 'Paytone One', sans-serif; color: white">
+            SIGN AS
+          </h2>
+        </header>
+        <div
+          class="w3-container"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <input
+            onClick="window.location.href='/contractorsignup/signup.html'"
+            class="btn transparent"
+            type="button"
+            value="Contractor"
+            style="
+              background-color: #2b4f60;
+              font-family: 'Paytone One', sans-serif;
+              color: white;
+              padding: 5px;
+              margin: 10px;
+              border-radius: 10px;
+              height: 90px;
+              width: 200px;
+              border: none;
+              font-size: 20px;
+            "
+          />
+          <input
+            onClick="window.location.href='/Sign up/signup.html'"
+            class="btn transparent"
+            type="button"
+            value="Client"
+            style="
+              background-color: #2b4f60;
+              font-family: 'Paytone One', sans-serif;
+              color: white;
+              padding: 5px;
+              margin: 30px;
+              border-radius: 10px;
+              height: 90px;
+              width: 200px;
+              border: none;
+              font-size: 20px;
+            "
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footers">
+        <div class="description">
+          <h2>Recontractor</h2>
+          <h4>
+            Copyright © 2021 Recontractor. Designed By: Mark Kenneth Rillamas
+          </h4>
+        </div>
+      </div>
+    </footer>
+    <script src="/Home/home.js"></script>
+    <script>
+      let spinnerWrapper = document.querySelector('.loader-wrapper');
+
+      window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+      });
+    </script>
+  </body>
+</html>
